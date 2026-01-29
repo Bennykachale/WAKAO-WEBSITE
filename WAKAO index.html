@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Women and Kids Aid Organization (WAKAO)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Women and Kids Aid Organization</h1>
+  <p>Supporting Women and Children for a Better Future</p>
+</header>
+
+<nav>
+  <button onclick="showSection('projects')">Projects</button>
+  <button onclick="showSection('updates')">Updates</button>
+  <button onclick="showSection('donors')">Donors</button>
+  <button onclick="showSection('volunteers')">Volunteers</button>
+</nav>
+
+<main>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="content">
+    <h2>Our Projects</h2>
+    <input type="text" id="projectInput" placeholder="Enter project details">
+    <button onclick="addItem('projectInput', 'projectList')">Post Project</button>
+    <ul id="projectList"></ul>
+  </section>
+
+  <!-- UPDATES -->
+  <section id="updates" class="content hidden">
+    <h2>Organization Updates</h2>
+    <input type="text" id="updateInput" placeholder="Enter update">
+    <button onclick="addItem('updateInput', 'updateList')">Post Update</button>
+    <ul id="updateList"></ul>
+  </section>
+
+  <!-- DONORS -->
+  <section id="donors" class="content hidden">
+    <h2>Our Donors</h2>
+    <input type="text" id="donorInput" placeholder="Donor name / company">
+    <button onclick="addItem('donorInput', 'donorList')">Add Donor</button>
+    <ul id="donorList"></ul>
+  </section>
+
+  <!-- VOLUNTEERS -->
+  <section id="volunteers" class="content hidden">
+    <h2>Our Volunteers</h2>
+    <input type="text" id="volunteerInput" placeholder="Volunteer name">
+    <button onclick="addItem('volunteerInput', 'volunteerList')">Add Volunteer</button>
+    <ul id="volunteerList"></ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Women and Kids Aid Organization (WAKAO)</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
